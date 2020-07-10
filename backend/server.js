@@ -30,7 +30,7 @@ server.get("/receita", function (req, res) {
 
 // Criando a rota de erro
 server.use(function (req, res) {
-  res.status(404).render("not-found", { titulo: "Erro" });
+  res.status(404).render("not-found", { titulo: "Error 404" });
 });
 
 //Configurar a saida do servidor

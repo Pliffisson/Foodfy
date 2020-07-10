@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.page-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-error h1 {
+  padding-top: 30%;
+  padding-right: 5%;
+  font-size: 48pt;
+}
+
+p {
+  padding-top: 30%;
+  padding-right: 5%;
+  font-size: 18pt;
+}
