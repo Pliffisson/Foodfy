@@ -21,12 +21,17 @@ server.get("/", function (req, res) {
 });
 
 server.get("/sobre", function (req, res) {
-  return res.render("sobre", { titulo: "Foodfy" });
+  return res.render("sobre", { titulo: "Foodfy - Sobre" });
 });
 
-// server.get("/receita", function (req, res) {
-//   return res.render("receita");
-// });
+server.get("/receita", function (req, res) {
+  return res.render("receita", { titulo: "Foodfy - Receitas" });
+});
+
+// Criando a rota de erro
+server.use(function (req, res) {
+  res.status(404).render("not-found", { titulo: "Erro" });
+});
 
 //Configurar a saida do servidor
 server.listen(3005, function () {
