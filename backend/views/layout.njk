@@ -5,7 +5,7 @@
         {% block head %}
 
             <meta charset="UTF-8">
-            <title>Foodfy</title>
+            <title>{{ titulo }}</title>
 
         {% endblock %}
 
@@ -25,21 +25,6 @@
                     </div>
                 </div>
 
-                <div class="details">
-                    <div class="text">
-                        <div class="main-title">
-                            As melhores receitas
-                        </div>
-                        <div class="description-title">
-                            Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div class="chef">
-                            <img src="/assets/chef.png" alt="Chef">
-                        </div>
-                    </div>
-                </div>
             </header>
 
             {% block content %}{% endblock %}

@@ -17,16 +17,16 @@ nunjkucks.configure("views", {
 
 //Criando as rotas do servidor express
 server.get("/", function (req, res) {
-  return res.render("index");
+  return res.render("index", { titulo: "Foodfy" });
 });
 
 server.get("/sobre", function (req, res) {
-  return res.render("sobre");
+  return res.render("sobre", { titulo: "Foodfy" });
 });
 
-server.get("/receita", function (req, res) {
-  return res.render("receita");
-});
+// server.get("/receita", function (req, res) {
+//   return res.render("receita");
+// });
 
 //Configurar a saida do servidor
 server.listen(3005, function () {
