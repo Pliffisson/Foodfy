@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        {% block head %}
+
+            <meta charset="UTF-8">
+            <title>Foodfy</title>
+
+        {% endblock %}
+
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="home">
+                    <div class="logo">
+                        <a href="/"><img src="/assets/logo.png" alt="Logo Foodfy"></a>
+                    </div>
+                    <div class="links">
+                        <a href="/sobre">Sobre</a>
+                        <a href="/receita">Receitas</a>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="text">
+                        <div class="main-title">
+                            As melhores receitas
+                        </div>
+                        <div class="description-title">
+                            Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="chef">
+                            <img src="/assets/chef.png" alt="Chef">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </body>
+</html>
