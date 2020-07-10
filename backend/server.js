@@ -4,8 +4,21 @@ const nunjucks = require("nunjucks");
 // Chamando o servidor express
 const server = express();
 
+// Configurando as rotas do site
 server.get("/", function (req, res) {
-  return res.send("Ola seja bem vindo ao servidor express");
+  return res.render("layout");
+});
+
+server.get("/about", function (req, res) {
+  return res.render("about");
+});
+
+server.get("/revenue", function (req, res) {
+  return res.render("revenue");
+});
+
+server.use(function (req, res) {
+  res.status(404).render("not-found");
 });
 
 // Criar o servidor express
