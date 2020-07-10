@@ -17,6 +17,10 @@ nunjucks.configure("views", {
 
 // Configurando as rotas do site
 server.get("/", function (req, res) {
+  return res.render("layout");
+});
+
+server.get("/revenue", function (req, res) {
   return res.render("revenue");
 });
 
