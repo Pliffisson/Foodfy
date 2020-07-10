@@ -11,7 +11,7 @@ server.set("view engine", "njk");
 // Configurar o template engine
 nunjkucks.configure("views", {
   express: server,
-  autoescape: false,
+  autoescape: true,
   noCache: true,
 });
 

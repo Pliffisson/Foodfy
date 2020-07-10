@@ -1,206 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 
-    max-width: 940px;
-    width: 80%;
-    height: 100%;
+  max-width: 940px;
+  width: 80%;
+  height: 100%;
 }
 
 .home {
-    display: flex;
+  display: flex;
 }
 
 .home .logo {
-    padding: 36px 20px 30px 0; 
+  padding: 36px 20px 30px 0;
 }
 
 .links {
-    padding-top: 4px;
-    padding-left: 120px;
-    padding-top: 40px;
+  padding-top: 4px;
+  padding-left: 120px;
+  padding-top: 40px;
 }
 
 .links a {
-    text-decoration: none;
-    padding-left: 30px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #111111;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #111111;
 }
 
 .links a:hover {
-    font-weight: bol;
+  font-weight: bold;
 }
 
 .details {
-    background: #FBDFDB;
-    border-radius: 30px;
-    width: 940px;
+  background: #fbdfdb;
+  border-radius: 30px;
+  width: 940px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .details .text {
-    width: 316px;
-    display: grid;
-    align-content: center;
-    padding-left: 60px;
+  width: 316px;
+  display: grid;
+  align-content: center;
+  padding-left: 60px;
 }
 
-.details .main-title {    
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #111111;
-    padding-bottom: 10px;
+.details .main-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #111111;
+  padding-bottom: 10px;
 }
 
 .details .text .description-title {
-    opacity: 0.7;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-    line-height: 28px;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  line-height: 28px;
 }
 
 .details .chef {
-    padding: 66px 100px 0px 248px;
-    align: left;
+  padding: 66px 100px 0px 248px;
+  align-items: left;
 }
 
 .most-viewed p {
-    font-size: 24px;
-    line-height: 34px;
-    color: #111111;
-    font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  color: #111111;
+  font-weight: bold;
 
-    padding-top: 50px;
-    padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .cards .card .card-description p {
-    font-size: 18px;
-    line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
 
-    font-weight: 300;
-    padding:20px 0 0 0;
+  font-weight: 300;
+  padding: 20px 0 0 0;
 
-    color: #111111;
+  color: #111111;
 }
 
 .cards .card .card-author p {
-    padding: 0;
-    font-size: 14px;
-    color: #777777;
-    font-weight: 200;
+  padding: 0;
+  font-size: 14px;
+  color: #777777;
+  font-weight: 200;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .cards .card .card-image img {
-    width: 300px;
-    height: 140px;
-    border-radius: 15px;
-    cursor: pointer;
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.cards .card .no-pointer img{
-    cursor: default;
+.cards .card .no-pointer img {
+  cursor: default;
 }
 
 footer {
-    background-color: #EEEEEE;
-    height: 62px;
-    margin-top: 50px;
+  background-color: #eeeeee;
+  height: 62px;
+  margin-top: 50px;
 }
 
 footer p {
-    font-size: 14px;
-    color: #999999;
-    text-align: center;
-    padding-top: 23px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+  padding-top: 23px;
 }
 
 .modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
 
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
-    background-color: white;
-    width: 660px;
-    height: 413px;
-    margin: 25vh auto;
-    position: relative;
-    border-radius: 16px;
+  background-color: white;
+  width: 660px;
+  height: 413px;
+  margin: 25vh auto;
+  position: relative;
+  border-radius: 16px;
 }
 
-.modal-overlay.active{
-    opacity: 1;
-    visibility: visible;
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-overlay .modal .modal-content .modal-image {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .modal-overlay .modal .modal-content .modal-image img {
-    width: 600px;
-    height: 200px;
-    border-radius: 15px;
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
 }
 
-.modal-card-description, .modal-card-author, .modal-close {
-    display: flex;
-    justify-content: center;
+.modal-card-description,
+.modal-card-author,
+.modal-close {
+  display: flex;
+  justify-content: center;
 }
 
 .modal-card-author p {
-    font-size: 18px;
-    line-height: 21px;
-    color: #777777;
-    font-weight: 300;
-    padding-top: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  font-weight: 300;
+  padding-top: 5px;
 }
 
 .modal-card-description p {
-    font-size: 24px;
-    line-height: 28px;
-    color: #111111;
-    padding-top: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #111111;
+  padding-top: 20px;
 }
 
 .modal-close p {
-    font-size: 16px;
-    line-height: 19px;
-    color: #999999;
-    font-weight: 300;
-    cursor: pointer;
-    margin-top: 60px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+  font-weight: 300;
+  cursor: pointer;
+  margin-top: 60px;
 }
