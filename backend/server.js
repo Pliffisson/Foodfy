@@ -35,14 +35,14 @@ server.get("/sobre", function (req, res) {
 });
 
 server.get("/receita", function (req, res) {
-  return res.render("receita", { titulo: "Foodfy - Receitas" });
+  return res.render("receita", { items: dados });
 });
 
 server.get("/receita/:index", function (req, res) {
   const recipes = [...dados]; // Array de recitas carregadas do data.js
   const recipeIndex = req.params.index;
 
-  console.log(recipes[recipeIndex]);
+  return res.send(recipes[recipeIndex]);
 });
 0;
 // Criando a rota de erro

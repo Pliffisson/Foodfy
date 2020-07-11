@@ -2,152 +2,52 @@
 
 {%block head %}
 
-    <title>{{ titulo }}</title>
+    <title>Foodfy - Receitas</title>
 
 {% endblock %}
 
 {% block content %}
 
     <div class="cards">
-        <div class="card" id="burger">
-            <div class="card-image">
-                <img src="assets/burger.png" alt="Triplo bacon burger">
+
+        {% for item in items %}
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{item.image}}">
+                </div>
+                <div class="card-description">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card-author">
+                    <p>{{item.author}}</p>
+                </div>
             </div>
-            <div class="card-description">
-                <p>Triplo bacon burger</p>
+
+        {% endfor %}
+
+        {% for item in items %}
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{item.image}}">
+                </div>
+                <div class="card-description">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card-author">
+                    <p>{{item.author}}</p>
+                </div>
             </div>
-            <div class="card-author">
-                <p>por Jorge Relato</p>
-            </div>
-        </div>
-        <div class="card" id="pizza">
-            <div class="card-image">
-                <img src="assets/pizza.png" alt="Pizza 4 estações">
-            </div>
-            <div class="card-description">
-                <p>Pizza 4 estações</p>
-            </div>
-            <div class="card-author">
-                <p>por Fabiana Melo</p>
-            </div>
-        </div>
-        <div class="card" id="espaguete">
-            <div class="card-image">
-                <img src="assets/espaguete.png" alt="Espaguete ao Alho">
-            </div>
-            <div class="card-description">
-                <p>Espaguete ao Alho</p>
-            </div>
-            <div class="card-author">
-                <p>por Júlia Kinoto</p>
-            </div>
-        </div>
-        <div class="card" id="lasanha">
-            <div class="card-image">
-                <img src="assets/lasanha.png" alt="Lasanha Mac N' Cheese">
-            </div>
-            <div class="card-description">
-                <p>Lasanha Mac N' Cheese</p>
-            </div>
-            <div class="card-author">
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-        <div class="card" id="doce">
-            <div class="card-image">
-                <img src="assets/doce.png" alt="Docinhos pão-do-céu">
-            </div>
-            <div class="card-description">
-                <p>Docinhos pão-do-céu</p>
-            </div>
-            <div class="card-author">
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-        <div class="card" id="asinhas">
-            <div class="card-image">
-                <img src="assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-            </div>
-            <div class="card-description">
-                <p>Asinhas de frango ao barbecue</p>
-            </div>
-            <div class="card-author">
-                <p>por Vania Steroski</p>
-            </div>
-        </div>
-        <div class="card" id="burger">
-            <div class="card-image">
-                <img src="assets/burger.png" alt="Triplo bacon burger">
-            </div>
-            <div class="card-description">
-                <p>Triplo bacon burger</p>
-            </div>
-            <div class="card-author">
-                <p>por Jorge Relato</p>
-            </div>
-        </div>
-        <div class="card" id="pizza">
-            <div class="card-image">
-                <img src="assets/pizza.png" alt="Pizza 4 estações">
-            </div>
-            <div class="card-description">
-                <p>Pizza 4 estações</p>
-            </div>
-            <div class="card-author">
-                <p>por Fabiana Melo</p>
-            </div>
-        </div>
-        <div class="card" id="espaguete">
-            <div class="card-image">
-                <img src="assets/espaguete.png" alt="Espaguete ao Alho">
-            </div>
-            <div class="card-description">
-                <p>Espaguete ao Alho</p>
-            </div>
-            <div class="card-author">
-                <p>por Júlia Kinoto</p>
-            </div>
-        </div>
-        <div class="card" id="lasanha">
-            <div class="card-image">
-                <img src="assets/lasanha.png" alt="Lasanha Mac N' Cheese">
-            </div>
-            <div class="card-description">
-                <p>Lasanha Mac N' Cheese</p>
-            </div>
-            <div class="card-author">
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-        <div class="card" id="doce">
-            <div class="card-image">
-                <img src="assets/doce.png" alt="Docinhos pão-do-céu">
-            </div>
-            <div class="card-description">
-                <p>Docinhos pão-do-céu</p>
-            </div>
-            <div class="card-author">
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-        <div class="card" id="asinhas">
-            <div class="card-image">
-                <img src="assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-            </div>
-            <div class="card-description">
-                <p>Asinhas de frango ao barbecue</p>
-            </div>
-            <div class="card-author">
-                <p>por Vania Steroski</p>
-            </div>
-        </div>
+
+        {% endfor %}
+
     </div>
-</div>
 
-<footer>
-    <p>Todos direitos reservados, receitas Foodfy.</p>
-</footer>
+    <footer>
+        <p>Todos direitos reservados, receitas Foodfy.</p>
+    </footer>
 
-<script src="/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 {% endblock %}
