@@ -5,7 +5,7 @@ const nunjkucks = require("nunjucks");
 server = express();
 
 // Exportados os modulos
-const sobre = require("./about");
+const dados = require("./data");
 
 // Entregando os arquivos estaticos no express
 server.use(express.static("public"));
@@ -14,7 +14,7 @@ server.set("view engine", "njk");
 // Configurar o template engine
 nunjkucks.configure("views", {
   express: server,
-  autoescape: true,
+  autoescape: false,
   noCache: true,
 });
 
@@ -24,7 +24,14 @@ server.get("/", function (req, res) {
 });
 
 server.get("/sobre", function (req, res) {
-  return res.render("sobre", { about: sobre });
+  const about = {
+    title: "Foodfy - Sobre",
+    name1: "Sobre o Foodfy",
+    name2: "Como tudo Começou",
+    name3: "Nossas receitas",
+  };
+
+  return res.render("sobre", { about });
 });
 
 server.get("/receita", function (req, res) {
