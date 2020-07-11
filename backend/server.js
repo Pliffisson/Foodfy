@@ -4,6 +4,9 @@ const nunjkucks = require("nunjucks");
 // Chamar o servidor express
 server = express();
 
+// Exportados os modulos
+const sobre = require("./about");
+
 // Entregando os arquivos estaticos no express
 server.use(express.static("public"));
 server.set("view engine", "njk");
@@ -21,7 +24,7 @@ server.get("/", function (req, res) {
 });
 
 server.get("/sobre", function (req, res) {
-  return res.render("sobre", { titulo: "Foodfy - Sobre" });
+  return res.render("sobre", { about: sobre });
 });
 
 server.get("/receita", function (req, res) {
