@@ -38,6 +38,13 @@ server.get("/receita", function (req, res) {
   return res.render("receita", { titulo: "Foodfy - Receitas" });
 });
 
+server.get("/receita/:index", function (req, res) {
+  const recipes = [...dados]; // Array de recitas carregadas do data.js
+  const recipeIndex = req.params.index;
+
+  console.log(recipes[recipeIndex]);
+});
+0;
 // Criando a rota de erro
 server.use(function (req, res) {
   res.status(404).render("not-found", { titulo: "Error 404" });
