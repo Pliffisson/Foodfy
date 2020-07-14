@@ -38,13 +38,20 @@ server.get("/receita", function (req, res) {
   return res.render("receita", { items: dados });
 });
 
-server.get("/receita/:index", function (req, res) {
-  const recipes = [...dados]; // Array de recitas carregadas do data.js
-  const recipeIndex = req.params.index;
+server.get("/receitas/:id", function (req, res) {
+  const id = req.params.id;
 
-  return res.send(recipes[recipeIndex]);
+  const receitas = dados.find(function (receitas) {
+    return receitas.id == id;
+  });
+
+  if (!receitas) {
+    return res.render("not-found");
+  }
+
+  return res.render("receitas", { item: receitas });
 });
-0;
+
 // Criando a rota de erro
 server.use(function (req, res) {
   res.status(404).render("not-found", { titulo: "Error 404" });
