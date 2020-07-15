@@ -8,6 +8,32 @@
         </div>
         <h1 class="receitas_title">{{item.title}}</h1>
         <h3 class="receitas_author">{{item.author}}</h3>
+
+        <div class="detalhes-ingredientes">
+            <div class="wrapper">
+                <h1>Ingredientes</h1>
+                <a class="esconder_btn">Esconder</a>
+            </div>
+            <ul class="mostrar_receitas">
+                {% for ingredient in item.ingredients %}
+                    <li>{{ingredient}}</li>
+                {% endfor %}
+            </ul>
+            <div class="wrapper">
+                <h1>Modo de preparo</h1>
+                <a class="mostrar_btn">Mostrar</a>
+            </div>
+            <ul class="mostrar_preparo">
+                {% for prepare in item.preparation %}
+                    <li>{{prepare}}</li>
+                {% endfor %}
+            </ul>
+            <div class="wrapper">
+                <h1>Informações adicionais</h1>
+                <a class="esconder_informacoes">Esconder</a>
+            </div>
+            <p class="esconder">{{item.information}}</p>
+        </div>
     </article>
 
 {% endblock %}
