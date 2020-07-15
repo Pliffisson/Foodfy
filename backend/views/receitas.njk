@@ -1,17 +1,13 @@
 {% extends "layout.njk" %}
 
-{%block head %}
-
-    <title>Foodfy - Receitas Detalhadas</title>
-
-{% endblock %}
-
 {% block content %}
 
-    <section class="container">
-        <div class="img">
-            <img src="{{item.image}}">
+    <article class="receitas">
+        <div class="receitas_image">
+            <img src="{{item.image}}" alt="{{item.title}}">
         </div>
-    </section>
+        <h1 class="receitas_title">{{item.title}}</h1>
+        <h3 class="receitas_author">{{item.author}}</h3>
+    </article>
 
 {% endblock %}
