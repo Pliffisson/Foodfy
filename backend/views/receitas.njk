@@ -14,11 +14,12 @@
                 <h1>Ingredientes</h1>
                 <a class="esconder_btn">Esconder</a>
             </div>
-            <ul class="mostrar_receitas">
+            <ul class="esconder_receitas">
                 {% for ingredient in item.ingredients %}
                     <li>{{ingredient}}</li>
                 {% endfor %}
             </ul>
+
             <div class="wrapper">
                 <h1>Modo de preparo</h1>
                 <a class="mostrar_btn">Mostrar</a>
@@ -28,6 +29,7 @@
                     <li>{{prepare}}</li>
                 {% endfor %}
             </ul>
+
             <div class="wrapper">
                 <h1>Informações adicionais</h1>
                 <a class="esconder_informacoes">Esconder</a>

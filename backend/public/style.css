@@ -151,7 +151,6 @@ footer p {
 }
 
 .receitas_title {
-  width: auto;
   height: 42px;
   margin-top: 50px;
   text-align: center;
@@ -162,7 +161,6 @@ footer p {
 
 .receitas_author {
   text-align: center;
-  width: auto;
   height: 24px;
   font-family: Roboto-Regular;
   font-size: 20px;
@@ -186,9 +184,54 @@ footer p {
   color: #111111;
 }
 
-.detalhes-ingredientes .wrapper a {
+.detalhes-ingredientes .wrapper .esconder_btn {
   line-height: 14px;
   font-family: Roboto-Bold;
   font-size: 12px;
   color: #999999;
+}
+
+.detalhes-ingredientes .esconder_receitas {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 39px;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.detalhes-ingredientes .wrapper .mostrar_btn {
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  color: #999999;
+}
+
+.detalhes-ingredientes .mostrar_preparo {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 45px;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.detalhes-ingredientes .wrapper .esconder_informacoes {
+  width: 61px;
+  height: 14px;
+  line-height: 14px;
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  color: #999999;
+}
+
+.detalhes-ingredientes p {
+  padding-top: 20px;
+  padding-bottom: 45px;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  text-align: justify;
 }
