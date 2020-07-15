@@ -4,11 +4,11 @@
 
 # 🏷Sobre
 
-O projeto Foodfy construido no curso da Rocketseat Launchbase, onde mostra todos os pratos de um restaurante.
+O projeto Foodfy construindo no curso da Rocketseat Launchbase, onde mostra todos os pratos de um restaurante.
 
 ---
 
-## 📌 Tecnologias utlizadas
+## 📌 Tecnologias ultizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
@@ -18,15 +18,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [CSS]
 - [Javascript]
 
----
-
-## Backend em construção
-
-- Aguarde
-
----
-
-## 🗂 Como baixar o projeto:
+## 🗂 Como baixar e executar o projeto do Frontend:
 
 ```bash
   # Clonar o repositório
@@ -34,15 +26,43 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 
   # Entrar no diretório
-  $ cd foodfy
+  $ cd foodfy/Front
+
+  # Instalar a extenção
+    Abra o visual studio code e instale a extenção "Live server"
+
+  # Executando o projeto
+    Click no botão "Go Live" no canto inferior direito do VS Code.
+
+```
+
+---
+
+## Backend em finalizado
+
+- [Nodejs]
+- [Nunjucks]
+- [Express]
+
+---
+
+## 🗂 Como baixar e executar o projeto do backend:
+
+```bash
+  # Clonar o repositório
+  $ git clone https://github.com/Pliffisson/foodfy.git
+
+
+  # Entrar no diretório
+  $ cd foodfy/backend
 
 
   # Instalar as depedências do projeto
-  $ yarn install
+  $ yarn install ou npm install
 
 
   # Iniciar o projeto
-  $ yarn start
+  $ yarn start ou npm start
 ```
 
 ---
