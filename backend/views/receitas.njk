@@ -1,40 +1,37 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-
-    <article class="receitas">
-        <div class="receitas_image">
+    <article class="recipes_content">
+        <div class="recipe-image">
             <img src="{{item.image}}" alt="{{item.title}}">
         </div>
-        <h1 class="receitas_title">{{item.title}}</h1>
-        <h3 class="receitas_author">{{item.author}}</h3>
-
-        <div class="detalhes-ingredientes">
+        <h1 class="recipe-title">{{item.title}}</h1>
+        <h3 class="recipe-author">por
+            {{item.author}}</h3>
+        <div class="recipe-procedure">
             <div class="wrapper">
-                <h1>Ingredientes</h1>
-                <a class="esconder_btn">Esconder</a>
+                <h2>Ingredientes</h2>
+                <a class="showhide_btn">Esconder</a>
             </div>
-            <ul class="esconder_receitas">
+            <ul class="recipe_showhide">
                 {% for ingredient in item.ingredients %}
                     <li>{{ingredient}}</li>
                 {% endfor %}
             </ul>
-
             <div class="wrapper">
-                <h1>Modo de preparo</h1>
-                <a class="mostrar_btn">Mostrar</a>
+                <h2>Modo de preparo</h2>
+                <a class="showhide_btn">Esconder</a>
             </div>
-            <ul class="mostrar_preparo">
+            <ul class="recipe_showhide">
                 {% for prepare in item.preparation %}
                     <li>{{prepare}}</li>
                 {% endfor %}
             </ul>
-
             <div class="wrapper">
-                <h1>Informações adicionais</h1>
-                <a class="esconder_informacoes">Esconder</a>
+                <h2>Informações adicionais</h2>
+                <a class="showhide_btn">Esconder</a>
             </div>
-            <p class="esconder">{{item.information}}</p>
+            <p class="recipe_showhide">{{item.information}}</p>
         </div>
     </article>
 
